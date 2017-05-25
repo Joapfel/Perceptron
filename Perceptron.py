@@ -51,6 +51,7 @@ class Perceptron(object):
         """
     
         #array gefüllt mit nullen: eindimensional | so groß wie Anzahl an Merkmalen
+        #w[0] wird als bias verwendet. daher +1
         self.w_ = np.zeros(1 + X.shape[1])
         self.errors_ = []
         
